@@ -39,13 +39,16 @@ pip install -r requirements.txt
 ```
 
 ### 3. Add Your AI API Key
-The AI logic relies on the Gemini API. You need to provide your API key.
+The AI logic relies on an API key. This project is configured for **Google Gemini** by default, but can be easily swapped for OpenAI or Anthropic.
+
+**For detailed instructions on how to add a key for Gemini, OpenAI, or Anthropic, please read the [API_KEY_INSTRUCTIONS.md](API_KEY_INSTRUCTIONS.md) file.**
+
+To use the default Gemini setup:
 1. Create a file named `.env` in the root of the backend directory.
-2. Add your Gemini API key to the `.env` file like this:
+2. Add your Gemini API key:
 ```env
 GEMINI_API_KEY=your_actual_api_key_here
 ```
-*(If you do not have an API key, you can get one from Google AI Studio).*
 
 ### 4. Setup the Database
 Run the migrations to create the SQLite database tables and seed it with test data:
